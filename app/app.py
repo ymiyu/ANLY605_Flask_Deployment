@@ -20,7 +20,7 @@ def hello_world():
         #return render_template('index.html', href='static/Boxplt.jpeg')
         text = request.form['text']
         random_string = uuid.uuid4().hex
-#         path = "app/static/" + random_string + ".svg"
+#         path = "static/" + random_string + ".svg"
         path = random_string + ".svg"
         #return render_template('index.html', href='static/Boxplot.jpeg')
         
