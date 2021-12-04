@@ -66,7 +66,7 @@ def get_input(string):
 
 
 def plot_graphs(model,new_input_arr, output_file):
-    df = pd.read_csv("bank-additional-full.csv", sep=";")
+    df = pd.read_csv("app/bank-additional-full.csv", sep=";")
     df_age = df[["age","y"]]
     df_age["age_group"] = (df_age["age"]//10)*10
     df_age = df_age.groupby(["age_group","y"], as_index=False).count()
