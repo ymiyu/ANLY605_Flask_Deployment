@@ -25,7 +25,7 @@ def hello_world():
         
         # read user input
         np_arr = get_input(text)
-        pkl_filename="TrainedModel/pipeline.pkl"
+        pkl_filename="app/TrainedModel/pipeline.pkl"
         with open(pkl_filename, 'rb') as file:
             pickle_model = pickle.load(file)
         plot_graphs(model=pickle_model, new_input_arr=np_arr, output_file = path)
